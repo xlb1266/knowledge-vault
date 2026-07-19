@@ -108,8 +108,7 @@ knowledge-vault/
 │           ├── index.md           #   自动生成的导航
 │           ├── raw/articles/      #   采集原文
 │           └── wiki/              #   AI 蒸馏知识页
-├── start.js                       # 一键启动（spawn 前后端）
-└── agent.md                       # 项目规格书
+└── start.js                       # 一键启动（spawn 前后端）
 ```
 
 ## 🚀 快速开始
@@ -189,7 +188,7 @@ npm run dev:client    # 前端 http://localhost:5173
 | Wiki 蒸馏 | `POST /api/wiki/distill`（SSE） | 流式蒸馏进度 |
 | 问答 | `POST /api/qa/ask`（SSE） | 流式答题 + 引用 |
 
-完整 API 与数据模型见 [agent.md](agent.md)。
+端点实现见 `server/src/routes/`，数据模型见 `server/src/db/index.js`。
 
 ## 🗺️ 路线图
 
@@ -204,10 +203,6 @@ npm run dev:client    # 前端 http://localhost:5173
 - [ ] 知识图谱可视化
 - [ ] 蒸馏增量更新（当前全量重跑）
 - [ ] 更多平台（知乎、少数派、GitHub Stars）
-
-## 📚 文档
-
-- [agent.md](agent.md) —— 项目规格书（数据模型、API、分类体系）
 
 ## ⚠️ 注意事项
 
