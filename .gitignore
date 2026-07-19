@@ -28,6 +28,13 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# 编辑器
+# 编辑器 / IDE / AI 工具
 .vscode/
 .idea/
+.claude/
+
+# 内部开发文档（对话交接 / 阶段方案 / 进度记录，不入库）
+HANDOVER.md
+HANDOVER-F.md
+PLAN-*.md
+progress.md
