@@ -1,0 +1,14 @@
+{
+  "name": "knowledge-vault",
+  "version": "1.0.0",
+  "description": "多平台收藏知识采集与个人知识库整理系统",
+  "private": true,
+  "scripts": {
+    "dev": "node start.js",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  }
+}

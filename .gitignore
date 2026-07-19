@@ -1,0 +1,33 @@
+# 依赖
+node_modules/
+
+# 数据库文件
+server/data/*.db
+server/data/*.db-wal
+server/data/*.db-shm
+server/data/uploads/
+server/data/bilibili-cookie.txt
+
+# 用户知识库数据（运行时由 initWiki() 重建，AGENTS.md 模板已硬编码在 fs-wiki.js）
+server/data/kb-wiki/
+
+# 环境变量（含 API key）
+server/.env
+
+# 二进制工具
+server/bin/yt-dlp.exe
+
+# 构建产物
+client/dist/
+
+# 日志
+*.log
+npm-debug.log*
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
